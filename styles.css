@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #111;
+  }
+  
+  header {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .image-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .image-banner img {
+    width: 70%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .services {
+    text-align: center;
+    background: #fff;
+    padding: 4rem 2rem;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  background: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+}
+  
+  .service h3 {
+    font-weight: bold;
+  }
+  
+  .testimonial {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .testimonial blockquote {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .author {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  footer {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #333;
+  }
+.services-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-cta button {
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
