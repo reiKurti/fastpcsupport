@@ -168,3 +168,12 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.history-section {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.services {
+  padding-top: 2rem;
+}
