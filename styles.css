@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   
   .logo {
@@ -29,10 +30,11 @@
     font-size: 1.2rem;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    margin-left: 1rem;
   }
   
   .hero {
@@ -176,4 +178,59 @@
 
 .services {
   padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+
+/* Desktop view */
+nav {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+/* Mobile sidebar menu links */
+.mobile-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
 }
