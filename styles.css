@@ -83,10 +83,19 @@ header {
 /* Services Bar */
 .services-bar {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
   background: #f0f0f0;
+  gap: 1rem;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -206,6 +215,7 @@ a {
   flex-wrap: wrap;
 }
 
+/* Pricing Card & Best Deal Label */
 .pricing-card {
   background: #fff;
   border: 1px solid #ddd;
@@ -217,6 +227,24 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative; /* ensure relative positioning for absolute children */
+}
+
+.best-deal-label {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  transform: translateY(-50%);
+  background-color: #ff4757; /* bright red for emphasis */
+  color: white;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  user-select: none;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .pricing-card h3 {
@@ -256,4 +284,70 @@ a {
   text-align: center;
   font-size: 0.9rem;
   color: gray;
+}
+.learn-more-container {
+  margin-top: 1rem;
+}
+
+.pricing-comparison {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.pricing-card {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-card.highlighted {
+  border: 3px solid #007BFF;
+  background-color: #f0f8ff;
+}
+.pricing-card .price {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem 0;
+  font-weight: bold;
+}
+.pricing-card ul.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  text-align: left;
+  width: 100%;
+}
+.pricing-card ul.features li {
+  margin-bottom: 0.5rem;
+}
+.paypal-placeholder {
+  margin-top: auto;
+  font-style: italic;
+  color: #666;
+}
+.services-offered {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+.services-offered h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.services-offered ul {
+  list-style: disc inside;
+  padding-left: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+.services-offered ul li {
+  margin-bottom: 0.5rem;
 }
