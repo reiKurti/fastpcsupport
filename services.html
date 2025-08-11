@@ -59,18 +59,33 @@
       <div class="pricing-card highlighted">
         <div class="best-deal-label">Best Deal</div>
         <h3>Yearly Unlimited Support</h3>
-        <div class="price">$299.99</div>
+        <div class="price">$29.99/month</div>
         <ul class="features">
           <li>Unlimited remote support for 1 year</li>
           <li>Priority service</li>
           <li>Covers all supported devices in household</li>
         </ul>
-        <style>.pp-D3ZBUQ2F6ZAGL{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-<form action="https://www.paypal.com/ncp/payment/D3ZBUQ2F6ZAGL" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-D3ZBUQ2F6ZAGL" type="submit" value="Buy Now" />
-  <img src=https://www.paypalobjects.com/images/Debit_Credit.svg alt="cards" />
-  <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-</form>
+        <div id="paypal-button-container-P-52109714DB1448048NCNDK2I"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AfZc3mdSWJvyNvLHu49N5NykNOeESr0Oj6myqCH2CfHSaMp4WMLUJwdWIpLxQT0NftITPJSchBJZnQ4W&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-52109714DB1448048NCNDK2I'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert('Subscription successful! ID: ' + data.subscriptionID);
+              }
+          }).render('#paypal-button-container-P-52109714DB1448048NCNDK2I');
+        </script>
       </div>
     </div>
 
