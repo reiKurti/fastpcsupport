@@ -123,5 +123,21 @@
     }, 4000);
   </script>
 
+  <div id="side-banner" style="top: 15%;">
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/20/41/computer-1294045_60.jpg" alt="Ad">
+    <div class="banner-text">
+      <h4>Get Free Tech Support</h4>
+      <p>Chat with a live expert now!</p>
+      <button onclick="if(typeof Tawk_API!=='undefined'){Tawk_API.maximize();}">Start Chat</button>
+    </div>
+    <span class="close-btn" onclick="document.getElementById('side-banner').classList.remove('show')">×</span>
+  </div>
+
+  <script>
+    setTimeout(function(){
+      document.getElementById('side-banner').classList.add('show');
+    }, 3000);
+  </script>
+
 </body>
 </html>

@@ -400,3 +400,57 @@ a {
 .final-cta .btn {
   margin: 0.5rem;
 }
+
+#side-banner {
+  position: fixed;
+  right: -350px; /* start off-screen */
+  top: 30%;
+  width: 300px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 9999;
+  transition: right 0.5s ease;
+}
+
+#side-banner.show {
+  right: 0;
+}
+
+#side-banner img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.banner-text h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.banner-text p {
+  margin: 5px 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+#side-banner button {
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#side-banner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
